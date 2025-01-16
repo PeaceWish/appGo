@@ -7,7 +7,6 @@
 *****************************************************************************/
 
 #include "../../../src/mainwindow.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -122,45 +121,6 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->handleCardStart((*reinterpret_cast< std::add_pointer_t<AppCard*>>(_a[1]))); break;
         default: ;
         }
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        switch (_id) {
-        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 0:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< AppCard* >(); break;
-            }
-            break;
-        case 1:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< AppCard* >(); break;
-            }
-            break;
-        case 2:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< AppCard* >(); break;
-            }
-            break;
-        case 3:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< AppCard* >(); break;
-            }
-            break;
-        case 4:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< AppCard* >(); break;
-            }
-            break;
-        }
     }
 }
 
@@ -188,7 +148,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 5)
-            qt_static_metacall(this, _c, _id, _a);
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 5;
     }
     return _id;

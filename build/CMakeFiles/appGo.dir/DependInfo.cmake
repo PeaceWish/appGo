@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/zhangyuheng/workspace/appGo/src/mainwindow.cpp" "CMakeFiles/appGo.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/appGo.dir/src/mainwindow.cpp.o.d"
   "/Users/zhangyuheng/workspace/appGo/src/widgets/appcard.cpp" "CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o" "gcc" "CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o.d"
   "/Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp" "CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o" "gcc" "CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o.d"
+  "/Users/zhangyuheng/workspace/appGo/src/widgets/paginationwidget.cpp" "CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.o" "gcc" "CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

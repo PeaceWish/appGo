@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o.d"
   "CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o"
   "CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o.d"
+  "CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.o"
+  "CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.o.d"
   "appGo"
   "appGo.pdb"
   "appGo_autogen/mocs_compilation.cpp"

@@ -21,6 +21,7 @@ set(SOURCES
     src/mainwindow.cpp
     src/widgets/appcard.cpp
     src/widgets/appgridview.cpp
+    src/widgets/paginationwidget.cpp
 )
 
 # 添加头文件
@@ -28,6 +29,7 @@ set(HEADERS
     src/mainwindow.h
     src/widgets/appcard.h
     src/widgets/appgridview.h
+    src/widgets/paginationwidget.h
 )
 
 add_executable(${PROJECT_NAME}

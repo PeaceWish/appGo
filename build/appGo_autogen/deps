@@ -851,6 +851,8 @@ appGo_autogen/timestamp: \
 	/Users/zhangyuheng/workspace/appGo/src/widgets/appcard.h \
 	/Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp \
 	/Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.h \
+	/Users/zhangyuheng/workspace/appGo/src/widgets/paginationwidget.cpp \
+	/Users/zhangyuheng/workspace/appGo/src/widgets/paginationwidget.h \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QList \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QObject \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QRect \
@@ -1027,7 +1029,6 @@ appGo_autogen/timestamp: \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QScrollArea \
-	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QTabWidget \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \

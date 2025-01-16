@@ -2,3 +2,4 @@
 #include "UVLADIE3JM/moc_mainwindow.cpp"
 #include "RZ4CM6YYJ6/moc_appcard.cpp"
 #include "RZ4CM6YYJ6/moc_appgridview.cpp"
+#include "RZ4CM6YYJ6/moc_paginationwidget.cpp"

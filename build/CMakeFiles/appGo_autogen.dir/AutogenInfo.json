@@ -377,6 +377,12 @@
 			"MU",
 			"RZ4CM6YYJ6/moc_appgridview.cpp",
 			null
+		],
+		[
+			"/Users/zhangyuheng/workspace/appGo/src/widgets/paginationwidget.h",
+			"MU",
+			"RZ4CM6YYJ6/moc_paginationwidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -460,6 +466,11 @@
 		],
 		[
 			"/Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/zhangyuheng/workspace/appGo/src/widgets/paginationwidget.cpp",
 			"MU",
 			null
 		]

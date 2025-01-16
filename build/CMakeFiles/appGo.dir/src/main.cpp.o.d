@@ -1071,39 +1071,4 @@ CMakeFiles/appGo.dir/src/main.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qfontmetrics.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qfontinfo.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qsizepolicy.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTabWidget \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QWidget \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qwidget.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qframe.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qtextdocument.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qurl.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QPushButton \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractbutton.h \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QEnterEvent \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qevent.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qeventpoint.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qvector2d.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qvectornd.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpointingdevice.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qinputdevice.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qscreen.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QList \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QObject \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QRect \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qrect.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QSize \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qsize.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QSizeF \
-  /opt/homebrew/opt/qt@6/include/QtGui/QTransform \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qtransform.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qscreen_platform.h
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h

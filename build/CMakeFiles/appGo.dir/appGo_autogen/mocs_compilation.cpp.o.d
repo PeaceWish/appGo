@@ -1060,9 +1060,9 @@ CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qcursor.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qbitmap.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTabWidget \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_appcard.cpp \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/appcard.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
@@ -1110,9 +1110,6 @@ CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextformat.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpen.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextoption.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h \
-  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_appcard.cpp \
-  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/appcard.h \
   /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_appgridview.cpp \
   /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/appgridview.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QScrollArea \
@@ -1123,4 +1120,6 @@ CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/paginationwidget.h \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_paginationwidget.cpp

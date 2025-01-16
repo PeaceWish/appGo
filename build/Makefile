@@ -275,6 +275,30 @@ src/widgets/appgridview.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.s
 .PHONY : src/widgets/appgridview.cpp.s
 
+src/widgets/paginationwidget.o: src/widgets/paginationwidget.cpp.o
+.PHONY : src/widgets/paginationwidget.o
+
+# target to build an object file
+src/widgets/paginationwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.o
+.PHONY : src/widgets/paginationwidget.cpp.o
+
+src/widgets/paginationwidget.i: src/widgets/paginationwidget.cpp.i
+.PHONY : src/widgets/paginationwidget.i
+
+# target to preprocess a source file
+src/widgets/paginationwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.i
+.PHONY : src/widgets/paginationwidget.cpp.i
+
+src/widgets/paginationwidget.s: src/widgets/paginationwidget.cpp.s
+.PHONY : src/widgets/paginationwidget.s
+
+# target to generate assembly for a file
+src/widgets/paginationwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/paginationwidget.cpp.s
+.PHONY : src/widgets/paginationwidget.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -301,6 +325,9 @@ help:
 	@echo "... src/widgets/appgridview.o"
 	@echo "... src/widgets/appgridview.i"
 	@echo "... src/widgets/appgridview.s"
+	@echo "... src/widgets/paginationwidget.o"
+	@echo "... src/widgets/paginationwidget.i"
+	@echo "... src/widgets/paginationwidget.s"
 .PHONY : help
 
 

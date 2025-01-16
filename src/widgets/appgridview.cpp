@@ -1,6 +1,7 @@
 #include "appgridview.h"
 #include <QResizeEvent>
 #include <QScrollBar>
+#include <QVBoxLayout>
 
 AppGridView::AppGridView(QWidget *parent)
     : QScrollArea(parent)
@@ -8,6 +9,7 @@ AppGridView::AppGridView(QWidget *parent)
     , m_gridLayout(new QGridLayout(m_container))
     , m_columnsCount(3)  // 默认每行显示3个卡片
     , m_spacing(20)      // 默认间距20像素
+    , m_pagination(new PaginationWidget(this))
 {
     setupUI();
 }
@@ -20,7 +22,12 @@ void AppGridView::addAppCard(AppCard *card)
     
     m_cards.append(card);
     connectCardSignals(card);
-    updateLayout();
+    
+    // 更新总页数
+    m_pagination->setTotalPages((m_cards.size() + m_pagination->itemsPerPage() - 1) / m_pagination->itemsPerPage());
+    
+    // 更新显示
+    updateVisibleCards();
 }
 
 void AppGridView::clearCards()
@@ -30,6 +37,9 @@ void AppGridView::clearCards()
         card->deleteLater();
     }
     m_cards.clear();
+    m_visibleCards.clear();
+    m_pagination->setTotalPages(1);
+    m_pagination->setCurrentPage(1);
 }
 
 void AppGridView::setColumnsCount(int count)
@@ -45,14 +55,61 @@ int AppGridView::cardsCount() const
     return m_cards.count();
 }
 
+void AppGridView::setCurrentPage(int page)
+{
+    m_pagination->setCurrentPage(page);
+}
+
+void AppGridView::setItemsPerPage(int count)
+{
+    m_pagination->setItemsPerPage(count);
+}
+
+int AppGridView::currentPage() const
+{
+    return m_pagination->currentPage();
+}
+
+int AppGridView::itemsPerPage() const
+{
+    return m_pagination->itemsPerPage();
+}
+
+int AppGridView::totalPages() const
+{
+    return m_pagination->totalPages();
+}
+
 void AppGridView::resizeEvent(QResizeEvent *event)
 {
     QScrollArea::resizeEvent(event);
     calculateGrid();
 }
 
+void AppGridView::handlePageChanged(int page)
+{
+    updateVisibleCards();
+    emit pageChanged(page);
+}
+
+void AppGridView::handleItemsPerPageChanged(int count)
+{
+    // 更新总页数
+    m_pagination->setTotalPages((m_cards.size() + count - 1) / count);
+    
+    // 更新显示
+    updateVisibleCards();
+    emit itemsPerPageChanged(count);
+}
+
 void AppGridView::setupUI()
 {
+    // 创建主布局
+    QWidget *mainWidget = new QWidget(this);
+    QVBoxLayout *mainLayout = new QVBoxLayout(mainWidget);
+    mainLayout->setContentsMargins(0, 0, 0, 0);
+    mainLayout->setSpacing(20);
+    
     // 设置滚动区域的属性
     setWidgetResizable(true);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -60,14 +117,28 @@ void AppGridView::setupUI()
     setFrameShape(QFrame::NoFrame);
     
     // 设置容器widget
-    setWidget(m_container);
+    m_container->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    mainLayout->addWidget(m_container);
     
     // 设置网格布局的属性
     m_gridLayout->setSpacing(m_spacing);
     m_gridLayout->setContentsMargins(m_spacing, m_spacing, m_spacing, m_spacing);
     
+    // 添加分页控件
+    mainLayout->addWidget(m_pagination);
+    
+    // 设置主widget
+    setWidget(mainWidget);
+    
+    // 连接分页信号
+    connect(m_pagination, &PaginationWidget::pageChanged,
+            this, &AppGridView::handlePageChanged);
+    connect(m_pagination, &PaginationWidget::itemsPerPageChanged,
+            this, &AppGridView::handleItemsPerPageChanged);
+    
     // 设置背景色
     setStyleSheet("QScrollArea { background: transparent; }");
+    mainWidget->setStyleSheet("QWidget { background: transparent; }");
     m_container->setStyleSheet("QWidget { background: transparent; }");
 }
 
@@ -81,7 +152,7 @@ void AppGridView::updateLayout()
     // 重新添加卡片到网格布局
     int row = 0;
     int col = 0;
-    for (auto card : m_cards) {
+    for (auto card : m_visibleCards) {
         m_gridLayout->addWidget(card, row, col);
         col++;
         if (col >= m_columnsCount) {
@@ -131,4 +202,29 @@ void AppGridView::connectCardSignals(AppCard *card)
     connect(card, &AppCard::startClicked, this, [this, card]() {
         emit cardStartClicked(card);
     });
+}
+
+void AppGridView::updateVisibleCards()
+{
+    // 隐藏所有卡片
+    for (auto card : m_cards) {
+        card->hide();
+    }
+    
+    // 清空可见卡片列表
+    m_visibleCards.clear();
+    
+    // 计算当前页的卡片范围
+    int startIndex = (currentPage() - 1) * itemsPerPage();
+    int endIndex = qMin(startIndex + itemsPerPage(), m_cards.size());
+    
+    // 添加可见卡片
+    for (int i = startIndex; i < endIndex; ++i) {
+        AppCard *card = m_cards[i];
+        card->show();
+        m_visibleCards.append(card);
+    }
+    
+    // 更新布局
+    updateLayout();
 } 
