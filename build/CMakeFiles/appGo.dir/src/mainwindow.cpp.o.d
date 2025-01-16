@@ -1110,4 +1110,6 @@ CMakeFiles/appGo.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QStyle \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qstyle.h
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qstyle.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTabBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtabbar.h
