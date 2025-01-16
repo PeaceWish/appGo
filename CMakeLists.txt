@@ -19,11 +19,15 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Network Sql)
 set(SOURCES
     src/main.cpp
     src/mainwindow.cpp
+    src/widgets/appcard.cpp
+    src/widgets/appgridview.cpp
 )
 
 # 添加头文件
 set(HEADERS
     src/mainwindow.h
+    src/widgets/appcard.h
+    src/widgets/appgridview.h
 )
 
 add_executable(${PROJECT_NAME}

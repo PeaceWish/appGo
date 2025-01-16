@@ -23,6 +23,14 @@ public:
     // 获取当前显示的卡片数量
     int cardsCount() const;
 
+signals:
+    // 转发卡片的信号
+    void cardClicked(AppCard *card);
+    void cardDoubleClicked(AppCard *card);
+    void cardInstallClicked(AppCard *card);
+    void cardUninstallClicked(AppCard *card);
+    void cardStartClicked(AppCard *card);
+
 protected:
     void resizeEvent(QResizeEvent *event) override;
 
@@ -30,6 +38,7 @@ private:
     void setupUI();
     void updateLayout();
     void calculateGrid();
+    void connectCardSignals(AppCard *card);
 
 private:
     QWidget *m_container;       // 容器widget

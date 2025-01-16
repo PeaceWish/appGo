@@ -19,6 +19,7 @@ void AppGridView::addAppCard(AppCard *card)
     if (!card) return;
     
     m_cards.append(card);
+    connectCardSignals(card);
     updateLayout();
 }
 
@@ -106,4 +107,28 @@ void AppGridView::calculateGrid()
     if (possibleColumns != m_columnsCount) {
         setColumnsCount(possibleColumns);
     }
+}
+
+void AppGridView::connectCardSignals(AppCard *card)
+{
+    // 连接卡片的所有信号
+    connect(card, &AppCard::cardClicked, this, [this, card]() {
+        emit cardClicked(card);
+    });
+    
+    connect(card, &AppCard::cardDoubleClicked, this, [this, card]() {
+        emit cardDoubleClicked(card);
+    });
+    
+    connect(card, &AppCard::installClicked, this, [this, card]() {
+        emit cardInstallClicked(card);
+    });
+    
+    connect(card, &AppCard::uninstallClicked, this, [this, card]() {
+        emit cardUninstallClicked(card);
+    });
+    
+    connect(card, &AppCard::startClicked, this, [this, card]() {
+        emit cardStartClicked(card);
+    });
 } 

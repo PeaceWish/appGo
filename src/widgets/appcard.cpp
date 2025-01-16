@@ -3,6 +3,7 @@
 #include <QHBoxLayout>
 #include <QPixmap>
 #include <QEvent>
+#include <QMouseEvent>
 
 AppCard::AppCard(QWidget *parent)
     : QWidget(parent)
@@ -12,9 +13,16 @@ AppCard::AppCard(QWidget *parent)
     , m_actionBtn(new QPushButton(this))
     , m_isInstalled(false)
     , m_isHovered(false)
+    , m_isPressed(false)
 {
     setupUI();
     updateStyle();
+    
+    // 设置鼠标追踪，以便实现悬停效果
+    setMouseTracking(true);
+    
+    // 设置焦点策略，使卡片可以接收焦点
+    setFocusPolicy(Qt::StrongFocus);
 }
 
 AppCard::~AppCard() = default;
@@ -64,8 +72,30 @@ void AppCard::enterEvent(QEnterEvent *event)
 void AppCard::leaveEvent(QEvent *event)
 {
     m_isHovered = false;
+    m_isPressed = false;
     updateStyle();
     QWidget::leaveEvent(event);
+}
+
+void AppCard::mousePressEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton) {
+        m_isPressed = true;
+        updateStyle();
+    }
+    QWidget::mousePressEvent(event);
+}
+
+void AppCard::mouseDoubleClickEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton) {
+        emit cardDoubleClicked();
+        // 如果已安装，双击时启动应用
+        if (m_isInstalled) {
+            emit startClicked();
+        }
+    }
+    QWidget::mouseDoubleClickEvent(event);
 }
 
 void AppCard::setupUI()
@@ -110,6 +140,10 @@ void AppCard::setupUI()
     m_nameLabel->setText("应用名称");
     m_descLabel->setText("应用描述");
     m_actionBtn->setText("安装");
+    
+    // 设置按钮不参与卡片的点击事件
+    m_actionBtn->setFocusPolicy(Qt::NoFocus);
+    m_actionBtn->setCursor(Qt::PointingHandCursor);
 }
 
 void AppCard::updateStyle()
@@ -135,10 +169,13 @@ void AppCard::updateStyle()
         "  background-color: %4;"
         "}"
     )
-    .arg(m_isHovered ? "#f5f5f5" : "#ffffff")
+    .arg(m_isPressed ? "#e8e8e8" : (m_isHovered ? "#f5f5f5" : "#ffffff"))
     .arg(m_isHovered ? "#e0e0e0" : "#f0f0f0")
     .arg(m_isInstalled ? "#28a745" : "#007AFF")
     .arg(m_isInstalled ? "#218838" : "#0056b3");
     
     setStyleSheet(cardStyle);
+    
+    // 设置鼠标样式
+    setCursor(m_isHovered ? Qt::PointingHandCursor : Qt::ArrowCursor);
 } 

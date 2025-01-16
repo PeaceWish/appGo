@@ -1062,6 +1062,9 @@ CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTabWidget \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QWidget \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qframe.h \
@@ -1069,8 +1072,55 @@ CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextdocument.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qurl.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractbutton.h \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QEnterEvent \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qevent.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qcoreevent.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qeventpoint.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qvector2d.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qvectornd.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpointingdevice.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qinputdevice.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qscreen.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QList \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qlist.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QObject \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qobject.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QRect \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qrect.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QSize \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qsize.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QSizeF \
+  /opt/homebrew/opt/qt@6/include/QtGui/QTransform \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qtransform.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qnativeinterface.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qscreen_platform.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qguiapplication.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qcoreapplication.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qdeadlinetimer.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qelapsedtimer.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qeventloop.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qcoreapplication_platform.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qinputmethod.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qlocale.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextcursor.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextformat.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpen.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextoption.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h
+  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_appcard.cpp \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/appcard.h \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/moc_appgridview.cpp \
+  /Users/zhangyuheng/workspace/appGo/build/appGo_autogen/RZ4CM6YYJ6/../../../src/widgets/appgridview.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QScrollArea \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qscrollarea.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGridLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h

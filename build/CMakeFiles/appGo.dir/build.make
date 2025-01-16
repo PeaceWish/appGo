@@ -121,11 +121,41 @@ CMakeFiles/appGo.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appGo.dir/src/mainwindow.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangyuheng/workspace/appGo/src/mainwindow.cpp -o CMakeFiles/appGo.dir/src/mainwindow.cpp.s
 
+CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o: CMakeFiles/appGo.dir/flags.make
+CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o: /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.cpp
+CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o: CMakeFiles/appGo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zhangyuheng/workspace/appGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o -MF CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o.d -o CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o -c /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.cpp
+
+CMakeFiles/appGo.dir/src/widgets/appcard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appGo.dir/src/widgets/appcard.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.cpp > CMakeFiles/appGo.dir/src/widgets/appcard.cpp.i
+
+CMakeFiles/appGo.dir/src/widgets/appcard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appGo.dir/src/widgets/appcard.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.cpp -o CMakeFiles/appGo.dir/src/widgets/appcard.cpp.s
+
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o: CMakeFiles/appGo.dir/flags.make
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o: /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o: CMakeFiles/appGo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zhangyuheng/workspace/appGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o -MF CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o.d -o CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o -c /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp
+
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp > CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.i
+
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp -o CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.s
+
 # Object files for target appGo
 appGo_OBJECTS = \
 "CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/appGo.dir/src/main.cpp.o" \
-"CMakeFiles/appGo.dir/src/mainwindow.cpp.o"
+"CMakeFiles/appGo.dir/src/mainwindow.cpp.o" \
+"CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o" \
+"CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o"
 
 # External object files for target appGo
 appGo_EXTERNAL_OBJECTS =
@@ -133,6 +163,8 @@ appGo_EXTERNAL_OBJECTS =
 appGo: CMakeFiles/appGo.dir/appGo_autogen/mocs_compilation.cpp.o
 appGo: CMakeFiles/appGo.dir/src/main.cpp.o
 appGo: CMakeFiles/appGo.dir/src/mainwindow.cpp.o
+appGo: CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o
+appGo: CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o
 appGo: CMakeFiles/appGo.dir/build.make
 appGo: /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Versions/A/QtWidgets
 appGo: /opt/homebrew/opt/qt@6/lib/QtNetwork.framework/Versions/A/QtNetwork
@@ -140,7 +172,7 @@ appGo: /opt/homebrew/opt/qt@6/lib/QtSql.framework/Versions/A/QtSql
 appGo: /opt/homebrew/opt/qt@6/lib/QtGui.framework/Versions/A/QtGui
 appGo: /opt/homebrew/opt/qt@6/lib/QtCore.framework/Versions/A/QtCore
 appGo: CMakeFiles/appGo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/zhangyuheng/workspace/appGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable appGo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/zhangyuheng/workspace/appGo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable appGo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appGo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

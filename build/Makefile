@@ -227,6 +227,54 @@ src/mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/mainwindow.cpp.s
 .PHONY : src/mainwindow.cpp.s
 
+src/widgets/appcard.o: src/widgets/appcard.cpp.o
+.PHONY : src/widgets/appcard.o
+
+# target to build an object file
+src/widgets/appcard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appcard.cpp.o
+.PHONY : src/widgets/appcard.cpp.o
+
+src/widgets/appcard.i: src/widgets/appcard.cpp.i
+.PHONY : src/widgets/appcard.i
+
+# target to preprocess a source file
+src/widgets/appcard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appcard.cpp.i
+.PHONY : src/widgets/appcard.cpp.i
+
+src/widgets/appcard.s: src/widgets/appcard.cpp.s
+.PHONY : src/widgets/appcard.s
+
+# target to generate assembly for a file
+src/widgets/appcard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appcard.cpp.s
+.PHONY : src/widgets/appcard.cpp.s
+
+src/widgets/appgridview.o: src/widgets/appgridview.cpp.o
+.PHONY : src/widgets/appgridview.o
+
+# target to build an object file
+src/widgets/appgridview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o
+.PHONY : src/widgets/appgridview.cpp.o
+
+src/widgets/appgridview.i: src/widgets/appgridview.cpp.i
+.PHONY : src/widgets/appgridview.i
+
+# target to preprocess a source file
+src/widgets/appgridview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.i
+.PHONY : src/widgets/appgridview.cpp.i
+
+src/widgets/appgridview.s: src/widgets/appgridview.cpp.s
+.PHONY : src/widgets/appgridview.s
+
+# target to generate assembly for a file
+src/widgets/appgridview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appGo.dir/build.make CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.s
+.PHONY : src/widgets/appgridview.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -247,6 +295,12 @@ help:
 	@echo "... src/mainwindow.o"
 	@echo "... src/mainwindow.i"
 	@echo "... src/mainwindow.s"
+	@echo "... src/widgets/appcard.o"
+	@echo "... src/widgets/appcard.i"
+	@echo "... src/widgets/appcard.s"
+	@echo "... src/widgets/appgridview.o"
+	@echo "... src/widgets/appgridview.i"
+	@echo "... src/widgets/appgridview.s"
 .PHONY : help
 
 

@@ -1,8 +1,8 @@
-CMakeFiles/appGo.dir/src/mainwindow.cpp.o: \
-  /Users/zhangyuheng/workspace/appGo/src/mainwindow.cpp \
-  /Users/zhangyuheng/workspace/appGo/src/mainwindow.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qmainwindow.h \
+CMakeFiles/appGo.dir/src/widgets/appgridview.cpp.o: \
+  /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.cpp \
+  /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QWidget \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsglobal.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtguiglobal.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qglobal.h \
@@ -541,7 +541,6 @@ CMakeFiles/appGo.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qtguiexports.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgets-config.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qwidget.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qwindowdefs.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qobjectdefs.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qnamespace.h \
@@ -1058,15 +1057,20 @@ CMakeFiles/appGo.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qcursor.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qbitmap.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTabWidget \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QScrollArea \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qscrollarea.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qframe.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qwidget.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGridLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
   /Users/zhangyuheng/workspace/appGo/src/widgets/appcard.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QWidget \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qframe.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextdocument.h \
@@ -1105,26 +1109,7 @@ CMakeFiles/appGo.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qinputmethod.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qlocale.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qguiapplication_platform.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QApplication \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qapplication.h \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QScreen \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qscreen.h \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QCloseEvent \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QStyle \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qstyle.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QMessageBox \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qdialog.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qdialogbuttonbox.h \
-  /Users/zhangyuheng/workspace/appGo/src/widgets/appgridview.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QScrollArea \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qscrollarea.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGridLayout \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgridlayout.h
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QResizeEvent \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QScrollBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qscrollbar.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractslider.h
