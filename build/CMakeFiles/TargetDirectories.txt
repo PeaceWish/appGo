@@ -1,0 +1,5 @@
+/Users/zhangyuheng/workspace/appGo/build/CMakeFiles/appGo.dir
+/Users/zhangyuheng/workspace/appGo/build/CMakeFiles/edit_cache.dir
+/Users/zhangyuheng/workspace/appGo/build/CMakeFiles/rebuild_cache.dir
+/Users/zhangyuheng/workspace/appGo/build/CMakeFiles/appGo_autogen_timestamp_deps.dir
+/Users/zhangyuheng/workspace/appGo/build/CMakeFiles/appGo_autogen.dir
